@@ -7,4 +7,6 @@ h1, p{ margin:0;}
    background: url("https://github.com/Hstoys/homepage/blob/ded2d9be38d3062ea9dca252bb4d6a0685651ec6/hephaestus%20logo%203d%202.jpg") no-repeat;
    background-size: cover;
    background-position: conter center;
+   width:100vw;
+   height:100vh;
 }
