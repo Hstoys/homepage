@@ -2,10 +2,16 @@ html, body{
     margin:0;
     padding:0;
 } 
-h1, p{ margin:10;
+h1{ margin:10;
        font-family: 'Tilt Warp', cursive;
        font-weight: lighter;
-       
+       font-size: 50vmax;
+
+}
+p{ margin:10;
+       font-family: 'Tilt Warp', cursive;
+       font-weight: lighter;
+       font-size: 25vmax;
 }
 
 
@@ -28,14 +34,7 @@ h1, p{ margin:10;
     color: black;
     text-align: center;
     font-family: 'Tilt Warp', cursive;
-#contents h1{
-    font-size: 50vmax;
-    }
-    
-#contents p{    
-    font-size: 25vmax;
-    }
-    
+
     
     
 
