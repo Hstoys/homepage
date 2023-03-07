@@ -22,7 +22,7 @@ h1, p{ margin:100;
 }
 #contents{
     position: absolute;
-    top: 50%;
+    top: 10%;
     transform: translateY(-50%);
     width:30%;
     color: black;
