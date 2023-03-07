@@ -22,9 +22,9 @@ h1, p{ margin:100;
 }
 #contents{
     position: absolute;
-    top: 10%;
+    top: 30%;
     transform: translateY(-50%);
-    width:30%;
+    width:100%;
     color: black;
     text-align: center;
     font-family: 'Tilt Warp', cursive;
