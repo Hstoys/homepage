@@ -25,15 +25,17 @@ h1, p{ margin:100;
     top: 50%;
     transform: translateY(-50%);
     width:100%;
-    color:white;
-    text-align: 100px;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    width: 200px;
     font-family: 'Tilt Warp', cursive;
 #contents h1{
-    font-size: 300px;
+    font-size: 80 px;
     }
     
 #contents p{    
-    font-size: 150px;
+    font-size: 70px;
     }
     
     
