@@ -28,7 +28,7 @@ p{ margin:10;
 }
 #contents{
     position: absolute;
-    top: 20%;
+    top: 15%;
     transform: translateY(-50%);
     width:100%;
     color: black;
