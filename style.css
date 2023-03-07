@@ -40,7 +40,7 @@ p{ margin:10;
 
 }
  
-@media(min-width:900px){
+@media(max-width:900px){
     #contents h1{
         font-size: 70px;
     }
