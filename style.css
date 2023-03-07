@@ -24,7 +24,7 @@ h1, p{ margin:100;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width:100%;
+    width:30%;
     color: black;
     text-align: center;
     display: inline-block;
