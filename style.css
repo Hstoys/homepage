@@ -25,3 +25,17 @@ a{
     text-alingn: center;
     }
     
+#contents h1{
+    font-family: 'Tilt Warp', cursive;
+    font-size: 70px;
+    margin-bottom: 16px;
+    
+    }
+@media(max-width:769px){
+    #contents h1{
+        font-size:50px;
+    }
+    }
+    
+    
+    
