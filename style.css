@@ -27,20 +27,9 @@ p{ margin:10;
     color: black;
     text-align: center;
     font-family: 'Tilt Warp', cursive;
-
-    
-    
-
 }
  
-@media(max-width:900px){
-    #contents h1{
-        font-size: 46.6px;
-    }
-    #contents p {
-        font-size: 27.6px;
-    }
-}
+
 
 
     
