@@ -6,26 +6,19 @@ h1{ margin:10;
        font-family: 'Tilt Warp', cursive;
        font-weight: lighter;
        font-size: 5vmax;
-
 }
 p{ margin:10;
        font-family: 'Tilt Warp', cursive;
        font-weight: lighter;
        font-size: 3vmax;
 }
-
-
  #main{
    background: url("background.png") no-repeat;
    background-size: cover;
    background-position: center center;
    width:100vw;
    height:100vh;
-   
-
-   
-
-}
+   }
 #contents{
     position: absolute;
     top: 15%;
@@ -42,10 +35,10 @@ p{ margin:10;
  
 @media(max-width:900px){
     #contents h1{
-        font-size: 70px;
+        font-size: 46.6px;
     }
     #contents p {
-        font-size: 40px;
+        font-size: 27.6px;
     }
 }
 
