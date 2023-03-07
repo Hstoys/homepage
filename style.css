@@ -8,10 +8,10 @@ h1, p{ margin:0;
 
 
  #main{
-   background: url("hephaestus logo 3d 2.jpg") no-repeat;
+   background: url("background.png") no-repeat;
    background-size: cover;
    background-position: center center;
-   width:95vw;
+   width:100vw;
    height:100vh;
    
 
@@ -23,11 +23,15 @@ h1, p{ margin:0;
     top: 50%;
     transform: translateY(-50%);
     width:100%;
-    color:black;
+    color:white;
     text-align: center;
     font-family: 'Tilt Warp', cursive;
 #contents h1{
-    font-size: 70px;
+    font-size: 100px;
+    }
+    
+#contents p{    
+    font-size: 60px;
     }
     
     
