@@ -5,12 +5,12 @@ html, body{
 h1{ margin:10;
        font-family: 'Tilt Warp', cursive;
        font-weight: lighter;
-       font-size: 50vh;
+       font-size: 5vh;
 }
 p{ margin:10;
        font-family: 'Tilt Warp', cursive;
        font-weight: lighter;
-       font-size: 25vh;
+       font-size: 3vh;
 }
  #main{
    background: url("background.png") no-repeat;
