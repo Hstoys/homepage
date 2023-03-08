@@ -31,10 +31,10 @@ p{ margin:10;
 
 @media(max-width:900px){
     #contents h1{
-        font-size: 4vmax;
+        font-size: 5vmax;
     }
     #contents p{
-        font-size: 2vmax;
+        font-size: 3vmax;
     }
 }
 
