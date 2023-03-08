@@ -5,12 +5,12 @@ html, body{
 h1{ margin:10;
        font-family: 'Tilt Warp', cursive;
        font-weight: lighter;
-       font-size: 5vmin;
+       font-size: 60px;
 }
 p{ margin:10;
        font-family: 'Tilt Warp', cursive;
        font-weight: lighter;
-       font-size: 3vmin;
+       font-size: 30px;
 }
  #main{
    background: url("background.png") no-repeat;
@@ -29,12 +29,12 @@ p{ margin:10;
     font-family: 'Tilt Warp', cursive;
 }
 
-@media(max-width:900px){
+@media(max-width:500px){
     #contents h1{
-        font-size: 5vmax;
+        font-size: 30px;
     }
     #contents p{
-        font-size: 3vmax;
+        font-size: 15px;
     }
 }
 
