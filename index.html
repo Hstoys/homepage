@@ -24,14 +24,49 @@
       height: 100%;
       object-fit: cover;
     }
+
+    #unmute-button {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 10px 20px;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      z-index: 10;
+    }
+
+    #unmute-button:hover {
+      background-color: rgba(255, 255, 255, 0.7);
+      color: black;
+    }
   </style>
 </head>
 
 <body>
   <!-- Video Background -->
-  <video autoplay muted>
+  <video id="background-video" autoplay>
     <source src="hs.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
+
+  <!-- Unmute Button -->
+  <button id="unmute-button">Enable Sound</button>
+
+  <script>
+    // Enable sound when the button is clicked
+    const video = document.getElementById('background-video');
+    const unmuteButton = document.getElementById('unmute-button');
+
+    unmuteButton.addEventListener('click', () => {
+      video.muted = false;
+      video.play(); // Ensure the video resumes playback
+      unmuteButton.style.display = 'none'; // Hide the button after enabling sound
+    });
+  </script>
 </body>
 </html>
