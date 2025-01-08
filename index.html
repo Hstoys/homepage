@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>HEPHAESTUS</title>
   <!-- Responsive Meta Tag -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
   <style>
     body {
@@ -15,7 +15,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      overflow: hidden;
+      overflow: hidden; /* 스크롤 방지 */
     }
 
     video {
@@ -27,6 +27,7 @@
       height: auto;
     }
 
+    /* 모바일 환경에서 화면 비율 자동 조정 */
     @media (max-aspect-ratio: 16/9) {
       video {
         width: auto;
@@ -43,10 +44,15 @@
     Your browser does not support the video tag.
   </video>
 
-  <!-- JavaScript -->
   <script>
     const video = document.getElementById('background-video');
     let videoEnded = false; // Track if the video has been skipped or ended
+
+    // Prevent scrolling and touch movement
+    document.body.style.overflow = 'hidden';
+    document.addEventListener('touchmove', function(event) {
+      event.preventDefault();
+    }, { passive: false });
 
     // Click event for skipping to the end of the video
     document.body.addEventListener('click', () => {
