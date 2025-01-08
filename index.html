@@ -12,10 +12,10 @@
       padding: 0;
       background: #000000;
       height: 100vh;
-      overflow: hidden;
       display: flex;
       justify-content: center;
       align-items: center;
+      overflow: hidden;
     }
 
     video {
@@ -27,7 +27,6 @@
       height: auto;
     }
 
-    /* 모바일 환경에서 화면 비율 자동 조정 */
     @media (max-aspect-ratio: 16/9) {
       video {
         width: auto;
@@ -44,11 +43,17 @@
     Your browser does not support the video tag.
   </video>
 
+  <!-- JavaScript -->
   <script>
-    // Fix viewport scaling for iPhone
-    document.body.style.height = "100vh";
-    window.addEventListener("resize", () => {
-      document.body.style.height = "100vh";
+    const video = document.getElementById('background-video');
+
+    // Event listener for when the video starts playing
+    video.addEventListener('play', () => {
+      // Delay of 6 seconds
+      setTimeout(() => {
+        const audio = new Audio('hs.wav');
+        audio.play();
+      }, 6000); // 6 seconds delay
     });
   </script>
 </body>
