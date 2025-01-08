@@ -46,14 +46,24 @@
   <!-- JavaScript -->
   <script>
     const video = document.getElementById('background-video');
+    let videoEnded = false; // Track if the video has been skipped or ended
 
-    // Event listener for when the video starts playing
-    video.addEventListener('play', () => {
-      // Delay of 6 seconds
-      setTimeout(() => {
+    // Click event for skipping to the end of the video
+    document.body.addEventListener('click', () => {
+      if (!videoEnded) {
+        // Skip to the last frame and end the video
+        video.currentTime = video.duration;
+        videoEnded = true; // Mark the video as ended
+      } else {
+        // Play the sound on the second click
         const audio = new Audio('hs.wav');
         audio.play();
-      }, 6000); // 6 seconds delay
+      }
+    });
+
+    // Ensure the video stops when it reaches the end naturally
+    video.addEventListener('ended', () => {
+      videoEnded = true;
     });
   </script>
 </body>
