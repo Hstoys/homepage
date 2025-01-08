@@ -34,6 +34,99 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      width: 500px; /* 기존보다 5배 크기 */
+      height: 500px; /* 기존보다 5배 크기 */
+      background-color: transparent; /* 버튼 배경 투명 */
+      border: none;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.5s ease;
+    }
+
+    .center-button img {
+      width: 300%; /* 로고 크기를 기존보다 5배로 확대 */
+      height: auto;
+    }
+
+    /* Show Button */
+    .center-button.show {
+      opacity: 1;
+      visibility: visible;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Video Background -->
+  <video id="background-video" autoplay playsinline muted>
+    <source src="hs.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Centered Button -->
+  <button class="center-button" id="center-button">
+    <img src="HEPHAESTUS LOGO REV.1.svg" alt="HEPHAESTUS Logo">
+  </button>
+
+  <script>
+    // Video and Button Elements
+    const video = document.getElementById('background-video');
+    const button = document.getElementById('center-button');
+
+    // Add an event listener for when the video ends
+    video.addEventListener('ended', () => {
+      // Show the button when the video ends
+      button.classList.add('show');
+    });
+
+    // Optional: Add click functionality to the button
+    button.addEventListener('click', () => {
+      alert('Button clicked!');
+    });
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>HEPHAESTUS</title>
+  <!-- Responsive Meta Tag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #000000;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: auto;
+    }
+
+    /* Centered Button */
+    .center-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       width: 500px; /* 기존 100px에서 5배로 확대 */
       height: 500px; /* 기존 100px에서 5배로 확대 */
       background-color: rgba(255, 255, 255, 0.8);
