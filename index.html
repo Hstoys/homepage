@@ -34,15 +34,15 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 100px;
-      height: 100px;
+      width: 500px; /* 기존 100px에서 5배로 확대 */
+      height: 500px; /* 기존 100px에서 5배로 확대 */
       background-color: rgba(255, 255, 255, 0.8);
       border: none;
       border-radius: 50%;
       display: flex;
       justify-content: center;
       align-items: center;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
       cursor: pointer;
       opacity: 0;
       visibility: hidden;
@@ -50,7 +50,7 @@
     }
 
     .center-button img {
-      width: 60%;
+      width: 60%; /* 로고 크기 비율 유지 */
       height: auto;
     }
 
@@ -71,7 +71,7 @@
 
   <!-- Centered Button -->
   <button class="center-button" id="center-button">
-    <img src="logo.png" alt="Logo">
+    <img src="HEPHAESTUS LOGO REV.1.svg" alt="HEPHAESTUS Logo">
   </button>
 
   <script>
