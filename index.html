@@ -45,19 +45,11 @@
 
   <!-- JavaScript -->
   <script>
-    const video = document.getElementById('background-video');
-
-    // Event listener for when the video ends
-    video.addEventListener('ended', () => {
-      // Add a click event listener to the document
-      document.body.addEventListener('click', playSound, { once: true });
-    });
-
-    // Function to play the sound
-    function playSound() {
+    // Add a click event listener to the body
+    document.body.addEventListener('click', () => {
       const audio = new Audio('hs.wav');
       audio.play();
-    }
+    });
   </script>
 </body>
 </html>
