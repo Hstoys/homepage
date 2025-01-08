@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>HEPHAESTUS</title>
   <!-- Responsive Meta Tag -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
   <style>
     body {
@@ -15,7 +15,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      overflow: hidden;
+      overflow: hidden; /* 스크롤 방지 */
     }
 
     video {
@@ -27,7 +27,7 @@
       height: auto;
     }
 
-    /* Adjust for mobile devices */
+    /* 모바일 환경에서 화면 비율 자동 조정 */
     @media (max-aspect-ratio: 16/9) {
       video {
         width: auto;
@@ -43,5 +43,15 @@
     <source src="hs.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
+
+  <script>
+    // 스크롤 방지
+    document.body.style.overflow = 'hidden';
+
+    // 터치 이벤트 방지 (iOS에서 스크롤이 발생하지 않도록)
+    document.addEventListener('touchmove', function(event) {
+      event.preventDefault();
+    }, { passive: false });
+  </script>
 </body>
 </html>
