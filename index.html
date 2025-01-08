@@ -34,7 +34,7 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 500px; /* 버튼 크기 유지 */
+      width: 500px; /* 버튼 크기 */
       height: 500px;
       background-color: transparent; /* 투명한 배경 */
       border: none;
@@ -45,11 +45,11 @@
       cursor: pointer;
       opacity: 0;
       visibility: hidden;
-      transition: opacity 0.5s ease;
+      transition: opacity 0.5s ease, visibility 0.5s ease;
     }
 
     .center-button img {
-      width: 300%; /* 로고 크기를 5배 키움 */
+      width: 300%; /* 로고 크기 */
       height: auto;
     }
 
@@ -87,12 +87,13 @@
 
     // Add an event listener for when the video ends
     video.addEventListener('ended', () => {
-      // Show the button when the video ends
-      button.classList.add('show');
+      console.log("Video ended. Showing button."); // 디버깅용 메시지
+      button.classList.add('show'); // 버튼 표시
     });
 
     // Add click functionality to the button
     button.addEventListener('click', () => {
+      console.log("Button clicked."); // 디버깅용 메시지
       audio.play(); // Play the sound effect
     });
   </script>
